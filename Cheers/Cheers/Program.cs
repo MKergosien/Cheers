@@ -26,21 +26,11 @@ namespace Cheers
                 }
                 Console.WriteLine("Give me " + aOrAn + " " + letter);
             }
+            
+            Console.WriteLine(name.ToUpper() + " is GRAND");
             Console.WriteLine("Press any key to exit.");
             Console.ReadKey();
-
-        string capName = name;
-            System.Text.StringBuilder sb = new System.Text.StringBuilder(name);
-
-            for (int j = 0; j < sb.Length; j++)
-            {
-                if (Char.IsLower(sb[j]) == true)
-                    sb[j] = Char.ToUpper(sb[j]);
-            }
-            string corrected = sb.ToString();   
-            Console.WriteLine(corrected + " is GRAND!");
-/*            System.Console.WriteLine("Press any key to exit")*/;
-            Console.ReadKey();
+            
 
 
 
